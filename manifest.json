@@ -1,0 +1,20 @@
+﻿{
+
+  "manifest_version": 2,
+  "name": "YouTube Remaining Time",
+  "version": "1.3",
+
+  "description": "Shows the remaining time of the current video",
+
+  "icons": {
+    "48": "icons/yt.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["yt-remaining.js"]
+    }
+  ]
+
+}
